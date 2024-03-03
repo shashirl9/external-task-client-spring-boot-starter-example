@@ -1,5 +1,5 @@
 camunda.bpm.client:
-  base-url: http://localhost:8080/engine-rest # the URL pointing to the Camunda Platform Runtime REST API
+  base-url: http://localhost:9991/engine-rest # the URL pointing to the Camunda Platform Runtime REST API
   lock-duration: 10000 # defines how many milliseconds the External Tasks are locked until they can be fetched again
   subscriptions:
     scoreProvider: # topic name of the External Service Task
@@ -10,3 +10,5 @@ camunda.bpm.client:
       process-definition-key: loan_process
 
 logging.level.org.camunda.bpm.client: DEBUG # increase the log level of the application
+
+server.port: 9999
